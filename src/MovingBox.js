@@ -25,21 +25,21 @@ class MovingBox extends React.Component {
   }
   render() {
     const { cursor } = this.state
-    const result = ["hello","hi","hey"]
+    const result = [{name: "hello"},{name: "hi"},{name:"hey"}]
 
     return(
       <container>
-        <input onKeyDown={ this.handleKeyDown }/>
+        <div onKeyDown={ this.handleKeyDown }/>
         <ul>
           {
-            result.map((item, i) => (
-              <li
-                label={result[1]}
-                key={ item._id }
+            result.map((name, i) => (
+              <button
+                label={i.name}
+                key={ i }
                 className={`${cursor === i ? 'active' : ''}`}
               >
-                <span>{ item.title }</span>
-              </li>
+                <span>{ result.name }</span>
+              </button>
             ))
           }
         </ul>

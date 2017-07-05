@@ -19,8 +19,22 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.square {
+  background-color: blue;
+  padding: 25px;
+  height: auto;
+  width: 150px;
+  border-radius: 30px;
+  color: #FFFFFF;
+  font-weight: bold;
 }
 .here {
   transform: translateX(300px);

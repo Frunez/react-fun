@@ -13,15 +13,15 @@ class Button extends React.Component {
   }
   thisSaysSomething() {
     if (!this.state.isOn) {
-      return (<div className="here">Omg this is here</div>); 
+      return (<div className="square here">Omg this is here</div>); 
     }   
-    return (<div className="there">Not anymore</div>);
+    return (<div className="square there">Not anymore</div>);
   }
   render(){
     return (
       <div className="button">
         <button onClick={this.thing}>
-          {this.state.isOn ? 'open' : 'Close'}
+          {this.state.isOn ? 'open' : 'close'}
         </button>
         {this.thisSaysSomething()}
       </div>
